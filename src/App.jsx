@@ -5,6 +5,7 @@ import Auth from './pages/Auth'
 import './bootstrap.min.css'
 import MyProfile from './pages/MyProfile'
 import AllUsers from './pages/AllUsers'
+import Dashboard from './pages/Dashboard'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/login' element={<Auth />} />
         <Route path='/register' element={<Auth insideRegister={true} />} />
         <Route path='/my-profile' element={<MyProfile />} />

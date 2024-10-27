@@ -50,7 +50,7 @@ const Auth = ({ insideRegister }) => {
                     sessionStorage.setItem("user",JSON.stringify(result.data.user))
                     sessionStorage.setItem("token",result.data.token)
                     setUserData({ firstname: "", lastname: "", phone: "", email: "", password: "" })
-                    navigate('/')
+                    navigate('/dashboard')
                 }else{
                     if(result.response.status==404){
                         alert(result.response.data)
